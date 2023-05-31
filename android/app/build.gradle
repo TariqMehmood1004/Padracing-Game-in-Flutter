@@ -53,7 +53,11 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
-
+    externalNativeBuild {
+        cmake {
+            version = "cmake-version"
+        }
+    }
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
